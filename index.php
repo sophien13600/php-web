@@ -10,5 +10,8 @@
 <body>
     <h1 class= "text-primary">Page d'accueil</h1>
     <p>Bienvenue dans notre application PHP</p>
+   <a href="utilisateur.php?username=Mitroglu&ville=Marseille&age=55">
+        Connaitre un peu plus la légende ?
+   </a> 
 </body>
 </html>

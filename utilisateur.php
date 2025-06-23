@@ -1,17 +1,17 @@
 <?php
 
 $username = "Doe";
-if ($_POST['username'] != "") {
-    $username = $_POST['username'];
+if ($_REQUEST['username'] != "") {
+    $username = $_REQUEST['username'];
 }
 $genre ="Monsieur";
-if(isset ($_POST['genre']) and $_POST['genre'] =='femme'){
+if(isset ($_REQUEST['genre']) and $_REQUEST['genre'] =='femme'){
     
 $genre = "Madame";
 }
 
-$age = $_POST['age'];
-$ville = $_POST['ville'];
+$age = $_REQUEST['age'];
+$ville = $_REQUEST['ville'];
 
 ?>
 
