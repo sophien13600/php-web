@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Page d'inscription</h1>
-        <form action="utilisateur.php" method="get">
+        <form action="utilisateur.php" method="post">
             <fieldset>
                 <legend>Données de connexion</legend>
 
