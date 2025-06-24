@@ -13,6 +13,8 @@ $genre = "Madame";
 $age = $_REQUEST['age'];
 $ville = $_REQUEST['ville'];
 
+setcookie("nom", $username,);
+
 ?>
 
 
@@ -25,6 +27,7 @@ $ville = $_REQUEST['ville'];
 </head>
 <body>
     <h1>Gestion d'utilisateur</h1>
-    Bonjour <?php echo"$genre $username vous avez $age et êtes de $ville"?>
+     Bonjour <?="$genre $username vous avez $age ans et vous êtes de $ville"?>
+     <a href="test.php">Consulter les cookies</a>
 </body>
 </html>
