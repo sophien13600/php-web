@@ -32,8 +32,10 @@ $_SESSION['nom'] = $username;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion d'utilisateur</title>
+    <?php include "./_depencies.php"?>
 </head>
 <body>
+    <?php include "./_menu.php"?>
     <h1>Gestion d'utilisateur</h1>
      Bonjour <?="$genre $username vous avez $age ans et vous êtes de $ville"?>
      <a href="test.php">Consulter les cookies</a>

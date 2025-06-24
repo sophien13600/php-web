@@ -26,9 +26,11 @@ $nom_s="";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include "./_depencies.php"?>
     <title>Document</title>
 </head>
 <body>
+    <?php include "./_menu.php"?>
     <h1>Cookies</h1>
     <p>Nom: <?=$_COOKIE['nom']?></p>
     <p>Nom: <?=$nom_c?></p>
