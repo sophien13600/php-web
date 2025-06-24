@@ -1,5 +1,11 @@
 <?php
 session_start(); 
+if (is_null($_SERVER['HTTP_REFERER']) or (!str_contains($_SERVER['HTTP_REFERER'], 'index.php') and !str_contains($_SERVER['HTTP_REFERER'], 'inscription.php'))) {
+    header("location: index.php"); // redirection
+    exit(); // ne pas lire la suiteif((!isset(!str_contains($_SERVER['HTTP_REFERER'], 'index.php') and !str_contains($_SERVER['HTTP_REFERER'], 'inscription.php'))){
+    header("locaton: index.php"); //redirection
+    exit(); // ne pas lire la suite
+}
 $username = "Doe";
 if ($_REQUEST['username'] != "") {
     $username = $_REQUEST['username'];
@@ -21,7 +27,7 @@ $_SESSION['nom'] = $username;
 
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
